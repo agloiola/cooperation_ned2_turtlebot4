@@ -8,14 +8,14 @@ A solução utiliza ROS2 Jazzy, MoveIt2 e algoritmos de navegação e reposicion
 
 ---
 
-# Índice
+## Índice
 
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
 - [Execução](#execução)
 
-# Arquitetura do Sistema
+## Arquitetura do Sistema
 
 O sistema é baseado na comunicação entre diferentes nós ROS2, responsáveis por navegação, percepção e manipulação.
 
@@ -28,7 +28,7 @@ O fluxo de execução ocorre da seguinte forma:
 
 Essa arquitetura permite que o robô móvel e o manipulador trabalhem de forma cooperativa, aumentando a flexibilidade da manipulação no ambiente.
 
-# Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, certifique-se de que você tenha os seguintes softwares instalados e configurados:
 
