@@ -36,6 +36,51 @@ Antes de começar, certifique-se de que você tenha os seguintes softwares insta
 )(Ubuntu 24.04)
 - Python 3
 - RViz2
-- [MoveIt2]([https://moveit.picknik.ai/main/index.html](https://moveit.picknik.ai/main/doc/tutorials/getting_started/getting_started.html)
+- [MoveIt2](https://moveit.picknik.ai/main/doc/tutorials/getting_started/getting_started.html)
 
+## Instalação
 
+Siga os passos abaixo para configurar o ambiente e instalar todas as dependências necessárias:
+
+1. Clone este repositório dentro do seu workspace ROS2. Ele contém os algoritmos e arquivos necessários para a cooperação entre o TurtleBot4 e o NED2 durante a tarefa de pick and place:
+
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/agloiola/cooperation_ned2_turtlebot4.git
+    ```
+
+2. Instale o pacote do driver ROS2 do NED2, responsável pelo controle do braço robótico:
+
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/NiryoRobotics/ned-ros2-driver.git
+    ```
+
+3. Instale os pacotes do TurtleBot4:
+
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/turtlebot/turtlebot4.git
+    ```
+
+4. Instale o pacote usb_cam, utilizado para acessar a câmera conectada ao sistema:
+
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/ros-drivers/usb_cam.git
+    ```
+
+5. Para a detecção da posição do objeto, instale o pacote de marcadores AprilTag:
+
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/christianrauch/apriltag_ros.git
+    ```
+
+6. Após instalar todos os pacotes, compile o workspace e carregue o ambiente do ROS2:
+
+    ```bash
+    cd ~/ros2_ws
+    colcon build
+    source install/setup.bash
+    ```
