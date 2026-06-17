@@ -4,6 +4,13 @@ Este repositório apresenta a implementação de uma aplicação real voltada à
 
 O sistema integra navegação móvel, percepção visual e manipulação robótica. O TurtleBot4 é responsável por transportar o objeto até a região de cooperação próxima ao manipulador, enquanto o Niryo Ned2 realiza a tarefa de pick and place. Para aumentar a viabilidade da apreensão de objetos assimétricos, foi implementado um algoritmo de reorientação do robô móvel, responsável por buscar uma orientação mais favorável do objeto em relação ao manipulador.
 
+
+- Demonstração da execução da aplicação real, envolvendo a cooperação entre o TurtleBot4 e o Niryo Ned2 durante a tarefa de pick and place.: 
+<p align="center">
+  <img src="models/real.png" alt="Execução da cooperação entre TurtleBot4 e Niryo Ned2 em ambiente real" width="600"/>
+</p>
+
+
 ---
 
 ## Índice
